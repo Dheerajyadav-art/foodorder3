@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delish - Food Ordering</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>[7:52 PM, 8/1/2025] Dheeraj Yadav👨‍🎓: * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background: #ff4d4d;
+  padding: 1rem 0;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: yellow;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x800/?restaurant,food') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff4d4d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e60000;
+}
+
+.menu-section, .order-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-card h3 {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.order-section form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.order-section input, .order-section select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Delish<span>.</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Delicious Food Delivered To You</h2>
+      <p>Freshly made, quickly delivered. Taste the best!</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="\html task\download (1).jfif" alt="Pizza">
+          <h3>Cheesy Pizza</h3>
+          <p>₹299</p>
+        </div>
+        <div class="menu-card">
+          <img src="E:\html task\download (3).jfif" alt="Burger">
+          <h3>Grilled Burger</h3>
+          <p>₹199</p>
+        </div>
+        <div class="menu-card">
+          <img src="E:\html task\download pasta.jfif" alt="Pasta">
+          <h3>Italian Pasta</h3>
+          <p>₹249</p>
+        </div>
+        <div class="menu-card">
+          <img src="\html task\download (2).jfif" alt="Noodles">
+          <h3>Spicy Noodles</h3>
+          <p>₹179</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order-section">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Address" required />
+        <select required>
+          <option disabled selected>Select Food Item</option>
+          <option>Cheesy Pizza</option>
+          <option>Grilled Burger</option>
+          <option>Italian Pasta</option>
+          <option>Spicy Noodles</option>
+        </select>
+        <button type="submit" class="btn">Order Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer">
+    <p>&copy; 2025 Delish. All rights reserved.</p>
+	</div>
+  </footer>
+</body>
+</html>
